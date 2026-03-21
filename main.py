@@ -1,6 +1,6 @@
 import telebot
 from telebot import types
-t_token = "6673322182:AAGnbL49OUiSL9sxL0j8ZsniOKFgLEmuqkE"
+t_token = ""
 bot = telebot.TeleBot(t_token)
 
 @bot.message_handler(content_types=['text'])
