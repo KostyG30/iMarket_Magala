@@ -16,8 +16,10 @@ def get_text_messages(message):
         bot.send_message(message.from_user.id, 'Вітаємо вас у чат-боті онлайн платформи iMarket Магальської громади! 👋' +
                          ' Ми об’єднали всі магазини громади в одному місці, щоб зробити ваші покупки ще зручнішими та швидшими. '
                          'Тут ви можете дізнаватися про товари, акції, новинки та оформлювати покупки в будь-який час.'+ '\n' +
-                         'Наш девіз: «iMarket — все поруч, все для вас!» \nДякуємо, що обираєте нас! 🛍')
-    elif message.text == 'Продуктові магазини':
-        bot.send_message(message.from_user.id, "Тут список продуктових магазинів.", parse_mode='Markdown')
+                         'Наш девіз: «iMarket — все поруч, все для вас!» \nДякуємо, що обираєте нас! 🛍', reply_markup=markup)
+    elif message.text == 'Продукти харчування':
+        bot.send_message(message.from_user.id, 'Тут список продуктових товарів.', parse_mode="Markdown")
+    elif message.text == 'Про нас':
+        bot.send_message(message.from_user.id, "Розроблено для громади.\nРозробники:\nЯкобець Давід,\nЯкобець Георгій,\nГостюк Костянтин", parse_mode='Markdown')
 
 bot.polling(non_stop=True, interval=0)
