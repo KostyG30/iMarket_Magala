@@ -20,6 +20,6 @@ def get_text_messages(message):
     elif message.text == 'Продукти харчування':
         bot.send_message(message.from_user.id, 'Тут список продуктових товарів.', parse_mode="Markdown")
     elif message.text == 'Про нас':
-        bot.send_message(message.from_user.id, "Розроблено для громади.\nРозробники:\nЯкобець Давід,\nЯкобець Георгій,\nГостюк Костянтин", parse_mode='Markdown')
+        bot.send_message(message.from_user.id, "Розроблено для громади.\nРозробники:\nЯкобець Д.Г,\nЯкобець Г.С,\nГостюк К.І", parse_mode='Markdown')
 
 bot.polling(non_stop=True, interval=0)
