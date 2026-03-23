@@ -18,11 +18,11 @@ def get_text_messages(message):
 
     elif message.text == 'Магазини':
         bot.send_message(message.from_user.id, 'Тут список магазинів.',
-                         parse_mode="Markdown")
+        parse_mode="Markdown")
     elif message.text == 'Про нас':
         bot.send_message(message.from_user.id, "Розроблено для громади."
-                                               "\nРозробники:\nЯкобець Д.Г,\nЯкобець Г.С,\nГостюк К.І",
-                                            parse_mode='Markdown')
+        "\nРозробники:\nЯкобець Д.Г,\nЯкобець Г.С,\nГостюк К.І",
+        parse_mode='Markdown')
     elif message.text == f'Зворотний зв{chr(39)}язок':
         bot.send_message(message.from_user.id, "Наші контакти\n+380572825271\n+380675423167", parse_mode='Markdown')
 
