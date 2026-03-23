@@ -24,6 +24,7 @@ def get_text_messages(message):
         "\nРозробники:\nЯкобець Д.Г,\nЯкобець Г.С,\nГостюк К.І",
         parse_mode='Markdown')
     elif message.text == f'Зворотний зв{chr(39)}язок':
-        bot.send_message(message.from_user.id, "Наші контакти\n+380572825271\n+380675423167", parse_mode='Markdown')
+        bot.send_message(message.from_user.id,
+        "Наші контакти\n+380572825271\n+380675423167", parse_mode='Markdown')
 
 bot.polling(non_stop=True, interval=0)
