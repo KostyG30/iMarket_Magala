@@ -14,7 +14,7 @@ def get_text_messages(message):
         btn4 = types.KeyboardButton('Про нас')
         markup.add(btn1, btn2, btn3, btn4)
         bot.send_message(message.from_user.id, '👋 Привіт у iDelivery! 🚀' +
-                         'Хочеш швидку доставку? Ми вже в дорозі! '
+                         '\nХочеш швидку доставку? Ми вже в дорозі! '
                          'Обирай товари — ми доставимо їх просто до тебе додому.'+ '\n' +
                          'iDelivery — замовив і вже чекаєш! 😎', reply_markup=markup)
     elif message.text == 'Продукти харчування':
