@@ -5,7 +5,7 @@ t_token = api
 bot = telebot.TeleBot(t_token)
 @bot.message_handler(content_types=['text'])
 def get_text_messages(message):
-    if message.text == 'Запустити':
+    if message.text == '/start':
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True) #create buttons
         btn1 = types.KeyboardButton('Магазини')
         btn4 = types.KeyboardButton('Знижки')
