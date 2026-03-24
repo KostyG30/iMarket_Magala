@@ -27,7 +27,7 @@ def get_text_messages(message):
         parse_mode='Markdown')
     elif message.text == f'Зворотний зв{chr(39)}язок':
         bot.send_message(message.from_user.id,
-        "Наші контакти\n+380572825271\n+380675423167", parse_mode='Markdown')
+        "Наші контакти\n+380572825271\n+380675423167\n+380675423167", parse_mode='Markdown')
     elif message.text == 'Знижки': 
         bot.send_message(message.from_user.id,'Тут буде знижки', parse_mode='Markdown')
     elif message.text == 'Підтримка':
