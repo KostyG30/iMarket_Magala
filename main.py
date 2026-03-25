@@ -4,9 +4,9 @@ from apisetup import api
 t_token = api
 bot = telebot.TeleBot(t_token)
 
-@bot.message_handler(content_types=['/start'])
+@bot.message_handler(commands=['/start'])
 def send_message(message):
-    pass
+    markup = types.ReplyKeyboardMarkup()
 
 
 bot.polling(non_stop=True, interval=0)
